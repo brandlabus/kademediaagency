@@ -1,0 +1,129 @@
+.hero-section {
+  background-image: url("./");
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Essential for the overlay to work */
+}
+ 
+.the-header {
+  margin-bottom: 4rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.case-studies-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  padding-top: 10rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.case-studies-header {
+  margin-bottom: 50px;
+}
+.case-studies-header h1 {
+  font-size: 1.9rem;
+  color: #2c3e50; /* Primary brand color */
+  margin-bottom: 10px;
+}
+.case-studies-header p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.case-study-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.case-study-item {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  padding: 40px;
+}
+.case-study-item h2 {
+  font-size: 1.35em;
+  color: #2980b9; /* Secondary brand color for titles */
+  margin-bottom: 10px;
+}
+.case-study-item .client-meta {
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #eee;
+  padding-bottom: 10px;
+}
+.case-study-item h3 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.img-container {
+  width: 300px;
+  height: 170px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-holder {
+  width: 150px;
+  height: 400px;
+}
+
+.case-study-item ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+.case-study-item .key-result {
+  font-weight: bold;
+  color: #e67e22; /* High-impact color for results */
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.final-cta-section {
+  padding: 50px 20px;
+  margin-top: 50px;
+  background-color: #868b8b; /* Light contrast color */
+  border-radius: 5px;
+}
+
+/* Desktop Grid View */
+@media (max-width: 768px) {
+  .case-study-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop Grid View */
+@media (min-width: 768px) {
+  .case-study-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .case-study-item {
+    min-height: 750px; /* Ensures cards are roughly the same height */
+  }
+}
