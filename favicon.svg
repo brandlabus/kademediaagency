@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Premium Dark Mode Background Capsule -->
+  <rect width="32" height="32" rx="8" fill="#0b0e14"/>
+  
+  <!-- Premium Glossy Chat Bubble Gradient definition -->
+  <defs>
+    <linearGradient id="premiumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- The Inbox/Chat Bubble (Chat Management Focus) -->
+  <path d="M6 8h20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-6l-4 4v-4H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" fill="url(#premiumGrad)"/>
+  
+  <!-- The Monetization/Growth Symbol inside the chat (Revenue Unlocked) -->
+  <path d="M16 8v12M13.5 10.5h4a1.5 1.5 0 0 1 0 3h-3a1.5 1.5 0 0 0 0 3h4" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
